@@ -1,8 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class PrimeiroJdbc {
 	public static void main(String[] args) throws SQLException {
@@ -12,7 +8,7 @@ public class PrimeiroJdbc {
 					
 		try {
 			// 1. Aqui estamos realizando a conexão ao banco.
-			mConexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/javanoturnojdbc", "admin","senha");
+			mConexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/javanoturnojdbc", "aluno","aluno");
 			// Optamos por inserir diretamento os dados no momento da conexão, 
 			// como alternativa poderíamos utilizar variáveis ou funções.
 			
